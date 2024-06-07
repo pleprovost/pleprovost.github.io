@@ -14,8 +14,15 @@
 	     (index-content site posts)
 	     sxml->html))
 
+(define (about-page site posts)
+  (make-page "about.html"
+	     `((h1 "About")
+	       (p "Formely shaking protein in silico, now remotly cooking potatoes."))
+	     sxml->html))
+
 (site #:title "A Site."
       #:default-metadata
       '((author . "A Duck"))
       #:readers (list sxml-reader)
-      #:builders (list index-page))
+      #:builders (list index-page
+		       about-page))

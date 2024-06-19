@@ -1,0 +1,8 @@
+;;; -*- scheme -*-
+(use-modules (haunt utils)
+	     (haunt builder blog))
+
+`((title . "Index")
+  (content
+   (h1 "Hi, I'm a duck!")
+   (p "This spirited duck is contented with his rustic site.")))

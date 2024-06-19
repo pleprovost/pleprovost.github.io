@@ -1,0 +1,10 @@
+;;; -*- scheme -*-
+(use-modules (haunt utils))
+
+`((title . "Compte rendu d'observation")
+  (date . ,(string->date* "2024-06-19 21:28"))
+  (tags "astro")
+  (summary . "Première Lumière")
+  (content
+   ((h2 "Janvier 2024")
+    (p "Pour la première fois j'ai pu observé le ciel à l'aide d'un téléscope!"))))
